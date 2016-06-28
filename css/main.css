@@ -41,6 +41,9 @@ a:link, a:visited {
 
 h2 {
 	text-align: center;
+    font-size: 3em;
+    font-family: 'Baskerville Old Face';
+    padding-bottom: 20px;
 }
 
 img {
@@ -59,8 +62,8 @@ img {
 }
 
 .menu-item {
-	display: block;
-    float: left;
+	display: inline-block;
+    margin: auto;
 }
 
 .menu-item a {
@@ -68,9 +71,6 @@ img {
     text-decoration: none;
     line-height: 60px;
     padding: 20px 40px;
-}
-.menu-item:nth-child(1) {
-     margin-left: 250px;
 }
 
 .menu-item:hover {
@@ -117,13 +117,13 @@ img {
 }
 
 .layer1 {
-    animation: layer1animation 10s infinite;  
+    animation: layer1animation 15s infinite;  
 }
 .layer2 {
-    animation: layer2animation 10s infinite;
+    animation: layer2animation 15s infinite;
 }
 .layer3 {
-    animation: layer3animation 10s infinite;
+    animation: layer3animation 15s infinite;
 }
 
 .main-imagebox {
@@ -159,27 +159,36 @@ img {
 }
 
 .mypicture {
-	margin: 5px 30px;
+    margin-left: 8%;
 	height: 490px;
 	width: 30%;
 	display: inline-block;
 }
 
 .myprofile {
-	margin: 5px 30px;
+    margin-left: 5%;
+    padding: 10px 50px;
 	height: 490px;
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
+    border-radius: 50px 100px;
+    background-color: rgba(0, 100, 0, 0.15);
 }
+    .myprofile h2 {
+        font-size: 3em;
+        font-family: 'Baskerville Old Face';
+    }
+    .myprofile p {
+        font-size: 20px;
+    }
 
-/*
 .skills {
 	height: 550px;
 	padding: 50px 0;
     background-image: linear-gradient(rgba(0,120,200,0.2),rgba(150,150,255,0.6));
 }
-*/
+
 /*	slider stylings
 .skills-slider {
 	margin: 5px auto;
@@ -193,28 +202,42 @@ img {
 	margin:5px auto;
 }
 */
-/*
-.myskills {
-	width: 896px;
-	height: 450px;
+.skillscontainer{
+    border-radius: 100px 50px;
+    background-color: rgba(0, 0, 100, 0.15);
+    width: 85%;
+	height: 100%;   
 	margin: 5px auto;
+}
+.myskills {
 }
 
 .skill{
 	display: inline-block;
+    vertical-align: top;
 	height: 100px;
 	width: 100px;
 	margin: 10px 10px;
 }
+    .skill:hover{
+        height: 150px;
+        width: 150px;
+    }
 
 .projects {
-	height: 550px;
+	height: 620px;
 	padding: 100px 0 100px 0;
     background-image: linear-gradient(rgba(150,150,255,0.6),rgba(255,120,120,0.2));
 }
+.projectcontainer {
+    margin: 0 auto;
+    width: 85%;
+    border-radius: 50px 100px;
+    background-color: rgba(0, 100, 0, 0.2);
+}
 
 .myprojects {
-	width: 671px;
+	width: 90%;
 	height: 450px;
 	margin: 5px auto;
 }
@@ -227,23 +250,31 @@ img {
 }
 
 .contact {
-	height: 330px;
+	height: 450px;
 	width: 100%;
 	background-image: linear-gradient(rgba(255,120,120,0.2),rgba(150,150,255,0.6));
 }
-
+.contactcontainer {
+    height: 450px;
+    margin: auto;
+    width: 85%;
+}
 .contactinfo {
-	margin: 5px 30px;
+	margin: 100px 30px;
+    padding: 20px 35px;
 	width: 600px;
-	height: 98%;
+	height: 285px;
 	display: inline-block;
 	vertical-align: top;
+    border-radius: 50px 100px;
+    background-color: rgba(0, 100, 0, 0.5);
 }
 
 .contactform {
-	margin: 5px auto;
-	height: 320px;
-	display: inline-block;
+	margin: 100px auto 0;
+    height: 320px;
+    display: inline-block;
+    width: 55%;
 }
 
 .contactform input[type=text] {
@@ -286,5 +317,5 @@ img {
 	width: 18%;
 	font-size: 0.6em;
 	text-align: right;
+    color: #ffffff;
 }
-*/
