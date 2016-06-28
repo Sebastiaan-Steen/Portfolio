@@ -72,9 +72,6 @@ img {
     line-height: 60px;
     padding: 20px 40px;
 }
-.menu-item:nth-child(1) {
-     margin-left: 250px;
-}
 
 .menu-item:hover {
 	background-color: #ff8800;
@@ -120,13 +117,13 @@ img {
 }
 
 .layer1 {
-    animation: layer1animation 10s infinite;  
+    animation: layer1animation 15s infinite;  
 }
 .layer2 {
-    animation: layer2animation 10s infinite;
+    animation: layer2animation 15s infinite;
 }
 .layer3 {
-    animation: layer3animation 10s infinite;
+    animation: layer3animation 15s infinite;
 }
 
 .main-imagebox {
@@ -176,7 +173,7 @@ img {
 	display: inline-block;
 	vertical-align: top;
     border-radius: 50px 100px;
-    background-color: rgba(0, 100, 0, 0.5);
+    background-color: rgba(0, 100, 0, 0.15);
 }
     .myprofile h2 {
         font-size: 3em;
@@ -207,7 +204,7 @@ img {
 */
 .skillscontainer{
     border-radius: 100px 50px;
-    background-color: rgba(0, 0, 100, 0.25);
+    background-color: rgba(0, 0, 100, 0.15);
     width: 85%;
 	height: 100%;   
 	margin: 5px auto;
