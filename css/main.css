@@ -262,7 +262,7 @@ img {
 .contactinfo {
 	margin: 100px 30px;
     padding: 20px 35px;
-	width: 600px;
+	width: 35%;
 	height: 285px;
 	display: inline-block;
 	vertical-align: top;
@@ -312,7 +312,6 @@ img {
 
 .copyright {
 	display: inline-block;
-	margin: 0 5px;
 	height: 20px;
 	width: 18%;
 	font-size: 0.6em;
