@@ -1,6 +1,6 @@
 var Skill = document.getElementById('slideshow');
 
-var skillArray = new Array("images/csharp.png","images/css.png","images/jscript.png");
+var skillArray = new Array("./images/csharp.png","./images/css.png","./images/jscript.png");
 var skillNumber = 0;
 var skillArrayLength = skillArray.length - 1;
 
