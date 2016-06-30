@@ -2,53 +2,35 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-/*	border: 1px solid black;*/
-}
-@keyframes layer1animation {
-      0% { opacity: 1; }
-     33% { opacity: 0; }
-     66% { opacity: 0; }
-     100% { opacity: 1; }
+	/*border: 1px solid black;*/
 }
 
-@keyframes layer2animation {
-       0% { opacity: 0; }
-      33% { opacity: 1; }
-      66% { opacity: 0; }
-     100% { opacity: 0; }
-}
-
-@keyframes layer3animation {
-      0% { opacity: 0; }
-     33% { opacity: 0; }
-     66% { opacity: 1; }
-     100% { opacity: 0; }
+body {
+	background: #002D37;
+    margin: 0;
 }
 
 ul {
 	list-style: none;
 }
 
-body {
-	background-size: 100%;
-	background-color: #ffffff;
-    margin: 0;
-}
-
 a:link, a:visited {
 	color: #ffffff;
 }
-
+/* Indie Flower|Oleo Script */
 h2 {
 	text-align: center;
-    font-size: 3em;
-    font-family: 'Baskerville Old Face';
+    font: 3em 'Oleo Script';
     padding-bottom: 20px;
 }
 
+h3 {
+    font: 1.5em 'Oleo Script';
+}
+
 img {
-	height: 100%;
-	width: 100%;
+	height: 100px;
+	width: 100px;
 }
 
 .menu {
@@ -56,7 +38,7 @@ img {
 	top: 0;
 	width: 100%;
     height: 60px;
-	background-color: #00263D;
+	background: #002D37;
 	text-align: center;
     z-index: 10000;
 }
@@ -67,102 +49,47 @@ img {
 }
 
 .menu-item a {
-    font-size: 1.5em;
+    font: 1.5em 'Oleo Script';
     text-decoration: none;
     line-height: 60px;
     padding: 20px 40px;
 }
 
 .menu-item:hover {
-	background-color: #ff8800;
+	background: #ff8800;
 }
 
 .intro {
 	margin-top: 60px;
 	height: 460px;
-    background-image: url("../images/bambooforrest.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.introslider {
-    position: relative;
-    height: 400px;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-.layer1, .layer2, .layer3{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.layer1 article, .layer2 article, .layer3 article {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.layer1 ul, .layer2 ul, .layer3 ul {
-    display: inline-block;
-    vertical-align: top;
-    width: 800px;
-    margin: 10px auto;
-}
-.layer1 li, .layer2 li, .layer3 li {
-    display: inline-block;
-    height: 150px;
-    width: 150px;
-    margin-left: 5px;
-}
-
-.layer1 {
-    animation: layer1animation 15s infinite;  
-}
-.layer2 {
-    animation: layer2animation 15s infinite;
-}
-.layer3 {
-    animation: layer3animation 15s infinite;
-}
-
-.main-imagebox {
-    display: inline-block;
-    height: 300px;
-    width: 300px;
-    margin-top: 10px;
-    margin-left: 5px;
-}
-
-.main-imagebox img {
-    height: 100%;
-    width: 100%;
+    background: url("../images/bambooforrest.png") no-repeat center / cover;
 }
 
 .intro p {
-    display: inline-block;
     color: #ffffff;
-    font-size: 2.5em;
-    margin-right: 40px;
+    font: 3em 'Oleo Script';
+    margin: 350px 15px 0;
     float: right;
-    margin-top: -221px;
 }
 .intro span {
     display: block;
-    font-style: italic;
-    margin-right: 115px;
+    margin: -12px 0 0 35%;
+    font: 0.5em 'Indie Flower';
 }
 
 .about {
 	padding: 50px 0;
-	background-image: linear-gradient(rgba(150,150,255,0.6),rgba(0,120,200,0.2));
+    color: #ffffff;
 }
 
 .mypicture {
     margin-left: 8%;
-	height: 490px;
 	width: 30%;
 	display: inline-block;
+}
+.mypicture img {
+    height: 100%;
+    width: 100%;
 }
 
 .myprofile {
@@ -172,68 +99,55 @@ img {
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
-    border-radius: 50px 100px;
-    background-color: rgba(0, 100, 0, 0.15);
 }
-    .myprofile h2 {
-        font-size: 3em;
-        font-family: 'Baskerville Old Face';
-    }
-    .myprofile p {
-        font-size: 20px;
-    }
+.myprofile p {
+        font: 1em 'Indie Flower';
+        color: rgba(255, 255, 255, 0.7);
+}
 
 .skills {
-	height: 550px;
+	height: 800px;
 	padding: 50px 0;
-    background-image: linear-gradient(rgba(0,120,200,0.2),rgba(150,150,255,0.6));
+    background: rgba(255, 255, 255, 0.7);
 }
 
-/*	slider stylings
-.skills-slider {
-	margin: 5px auto;
-	width: 80%;
-	height: 250px;
+.skillscontainer {
+    width: 90%;
+    height: 100%;
+    margin: 5px auto;
 }
 
-#slideshow{
-	height: 200px;
-	width: 200px;
-	margin:5px auto;
-}
-*/
-.skillscontainer{
-    border-radius: 100px 50px;
-    background-color: rgba(0, 0, 100, 0.15);
-    width: 85%;
-	height: 100%;   
-	margin: 5px auto;
-}
 .myskills {
+    margin: 0 auto 80px;
+    width: 100%;
 }
 
-.skill{
+.skill {
 	display: inline-block;
     vertical-align: top;
 	height: 100px;
 	width: 100px;
-	margin: 10px 10px;
+	margin: 10px 0 0 0.6%;
 }
-    .skill:hover{
-        height: 150px;
-        width: 150px;
-    }
+.skill img {
+   display: block;
+   transform: scale(0.6, 0.6);
+}
+.skill img:hover {
+    display: block;
+    transform: scale(1, 1);
+}
 
 .projects {
-	height: 620px;
+	height: 800px;
 	padding: 100px 0 100px 0;
-    background-image: linear-gradient(rgba(150,150,255,0.6),rgba(255,120,120,0.2));
+    background: rgba(120, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.7);
 }
+
 .projectcontainer {
     margin: 0 auto;
     width: 85%;
-    border-radius: 50px 100px;
-    background-color: rgba(0, 100, 0, 0.2);
 }
 
 .myprojects {
@@ -250,24 +164,35 @@ img {
 }
 
 .contact {
-	height: 450px;
+	height: 700px;
 	width: 100%;
-	background-image: linear-gradient(rgba(255,120,120,0.2),rgba(150,150,255,0.6));
+	color: #FFFFFF;
 }
+
+.contact h2 {
+    text-align: left; 
+    margin-left: 11px;  
+}
+
 .contactcontainer {
-    height: 450px;
-    margin: auto;
+    height: 480px;
+    margin: 150px auto 0;
     width: 85%;
 }
+
 .contactinfo {
-	margin: 100px 30px;
+	margin: 80px 30px;
     padding: 20px 35px;
 	width: 35%;
 	height: 285px;
 	display: inline-block;
 	vertical-align: top;
-    border-radius: 50px 100px;
-    background-color: rgba(0, 100, 0, 0.5);
+}
+.contactinfo p {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 6% 6%;
+    display: block;
+    font: 1em 'Indie Flower';
 }
 
 .contactform {
@@ -280,27 +205,31 @@ img {
 .contactform input[type=text] {
 	width: 100%;
 	margin: 5px auto 10px;
-	background-color: rgba(100,100,100,0.2);
+	background: rgba(100,100,100,0.2);
+    color: #C0C0C0;
+    border: #000000 solid 1px;
 }
 
 .contactform textarea {
 	width: 100%;
 	height: 150px;
 	margin: 5px auto 10px;
-	background-color: rgba(100,100,100,0.2);
+	background: rgba(100,100,100,0.2);
+    color: #C0C0C0;
+    border: #000000 solid 1px;
 	resize: none;
 }
 
 .footnote {
 	height: 45px;
-	background-color: #00263D;
+	background: #00263D;
 }
 
 .socialmedia {
 	display: inline-block;
 	margin: 8px auto;
-	width: 81%;
-	height: 40px;
+	width: 30%;
+	height: 25px;
 }
 
 .mysocialmedia {
@@ -309,12 +238,16 @@ img {
 	height:30px;
 	width: 30px;
 }
+.mysocialmedia img {
+    height: 100%;
+    width:  100%;
+    background: #ffffff;
+}
 
 .copyright {
 	display: inline-block;
-	height: 20px;
-	width: 18%;
 	font-size: 0.6em;
-	text-align: right;
     color: #ffffff;
+    margin: 2.5% 1% 0%;
+    float: right;
 }
