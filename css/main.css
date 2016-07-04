@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/*border: 1px solid black;*/
 }
 
 body {
@@ -60,7 +59,7 @@ img {
 }
 
 .intro {
-	margin-top: 60px;
+	margin: 60px 0 0;
 	height: 460px;
     background: url("../images/bambooforrest.png") no-repeat center / cover;
 }
@@ -83,7 +82,7 @@ img {
 }
 
 .mypicture {
-    margin-left: 8%;
+    margin: 0 0 0 8%;
 	width: 30%;
 	display: inline-block;
 }
@@ -93,9 +92,8 @@ img {
 }
 
 .myprofile {
-    margin-left: 5%;
+    margin: 0 0 0 5%;
     padding: 10px 50px;
-	height: 490px;
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
@@ -106,14 +104,12 @@ img {
 }
 
 .skills {
-	height: 800px;
 	padding: 50px 0;
     background: rgba(255, 255, 255, 0.7);
 }
 
 .skillscontainer {
     width: 90%;
-    height: 100%;
     margin: 5px auto;
 }
 
@@ -131,15 +127,9 @@ img {
 }
 .skill img {
    display: block;
-   transform: scale(0.6, 0.6);
-}
-.skill img:hover {
-    display: block;
-    transform: scale(1, 1);
 }
 
 .projects {
-	height: 800px;
 	padding: 100px 0 100px 0;
     background: rgba(120, 255, 255, 0.3);
     color: #ffffff;
@@ -152,8 +142,7 @@ img {
 
 .myprojects {
 	width: 90%;
-	height: 450px;
-	margin: 5px auto;
+	margin: auto;
 }
 
 .project {
@@ -163,20 +152,23 @@ img {
 	margin: 10px 10px;
 }
 
+.project a {
+    text-decoration: none;
+    vertical-align: bottom;
+}
+
 .contact {
-	height: 700px;
 	width: 100%;
 	color: #FFFFFF;
 }
 
 .contact h2 {
     text-align: left; 
-    margin-left: 11px;  
+    margin: 0 0 0 11px;  
 }
 
 .contactcontainer {
-    height: 480px;
-    margin: 150px auto 0;
+    margin: auto;
     width: 85%;
 }
 
@@ -246,7 +238,7 @@ img {
 
 .copyright {
 	display: inline-block;
-	font-size: 0.6em;
+	font: 0.6em;
     color: #ffffff;
     margin: 2.5% 1% 0%;
     float: right;
