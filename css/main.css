@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+/*    border: 1px solid black;*/
 }
 
 body {
@@ -24,7 +25,9 @@ h2 {
 }
 
 h3 {
-    font: 1.5em 'Oleo Script';
+    font: 2em 'Oleo Script';
+    margin: 0 15px 35px;
+    text-align: right;
 }
 
 img {
@@ -89,6 +92,7 @@ img {
 .mypicture img {
     height: 100%;
     width: 100%;
+    border-radius: 250px;
 }
 
 .myprofile {
@@ -108,29 +112,102 @@ img {
     background: rgba(255, 255, 255, 0.7);
 }
 
-.skillscontainer {
-    width: 90%;
-    margin: 5px auto;
+.languages {
+    vertical-align: top;
+    display: inline-block;
+    padding: 20px 0 0;
+    margin: 0 12.5% 0 2%;
+    width: 22%;
 }
-
+.programs {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0 2% 0px 12.5%;
+    padding: 20px 0 0;
+    width: 22%;
+}
+.skillcontainer {
+    margin: auto;
+    padding: 15px 0 0 20%;
+}
 .myskills {
     margin: 0 auto 80px;
     width: 100%;
 }
 
-.skill {
-	display: inline-block;
+.skilllanguage,.skillprogram {
+    position: relative;
+	display: block;
     vertical-align: top;
-	height: 100px;
-	width: 100px;
-	margin: 10px 5% 0 0;
+	width: 100%;
+	margin: 20px 5% 0 0;
 }
-.skill img {
-   display: block;
+
+.skilllanguage img {
+   display: inline-block;
+   height: 50%;
+   width: 25%;
+}
+.skillprogram img {
+   display: inline-block;
+   height: 50%;
+   width: 25%;
+}
+.skilllanguage p {
+    position: absolute;
+    display: inline-block;
+    font: bold 0.8em verdana;
+    top: 53%;
+}
+.skillprogram p {
+    position: absolute;
+    display: inline-block;
+    font: bold 0.8em verdana;
+    top: 53%;
+}
+
+.bar {
+    position: absolute;
+    top: 25%;
+    display: inline-block;
+    height: 20%;
+    width: 75%;
+    background: #ffffff;
+    z-index: 0;
+}
+.percent {
+    background: #0105F0;
+    height: 100%;
+}
+
+.skilllanguage:nth-child(1) .percent {
+    width: 80%;
+}
+.skilllanguage:nth-child(2) .percent {
+    width: 50%;
+}
+.skilllanguage:nth-child(3) .percent {
+    width: 60%;
+}
+.skilllanguage:nth-child(4) .percent {
+    width: 40%;
+}
+.skilllanguage:nth-child(5) .percent {
+    width: 60%;
+}
+
+.skillprogram:nth-child(1) .percent {
+    width: 10%;
+}
+.skillprogram:nth-child(2) .percent {
+    width: 70%;
+}
+.skillprogram:nth-child(3) .percent {
+    width: 30%;
 }
 
 .projects {
-	padding: 100px 0 100px 0;
+    padding: 100px 0 100px 0;
     background: rgba(120, 255, 255, 0.3);
     color: #ffffff;
 }
