@@ -86,7 +86,7 @@ img {
 
 .mypicture {
     margin: 0 0 0 8%;
-	width: 30%;
+	width: 16%;
 	display: inline-block;
 }
 .mypicture img {
@@ -143,21 +143,11 @@ img {
 	margin: 20px 5% 0 0;
 }
 
-.skilllanguage img {
-   display: inline-block;
-   height: 50%;
-   width: 25%;
-}
-.skillprogram img {
-   display: inline-block;
-   height: 50%;
-   width: 25%;
-}
 .skilllanguage p {
-    position: absolute;
-    display: inline-block;
+    position: relative;
     font: bold 0.8em verdana;
-    top: 53%;
+    color: #ff8800;
+    z-index: 3;
 }
 .skillprogram p {
     position: absolute;
@@ -168,9 +158,9 @@ img {
 
 .bar {
     position: absolute;
-    top: 25%;
+    top: 15%;
     display: inline-block;
-    height: 20%;
+    height: 15px;
     width: 75%;
     background: #ffffff;
     z-index: 0;
@@ -207,7 +197,7 @@ img {
 }
 
 .projects {
-    padding: 100px 0 100px 0;
+    padding: 75px 0 100px 0;
     background: rgba(120, 255, 255, 0.3);
     color: #ffffff;
 }
@@ -224,8 +214,6 @@ img {
 
 .project {
 	display: inline-block;
-	height: 200px;
-	width: 200px;
 	margin: 10px 10px;
 }
 
