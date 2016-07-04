@@ -123,7 +123,7 @@ img {
     vertical-align: top;
 	height: 100px;
 	width: 100px;
-	margin: 10px 0 0 0.6%;
+	margin: 10px 5% 0 0;
 }
 .skill img {
    display: block;
@@ -238,8 +238,8 @@ img {
 
 .copyright {
 	display: inline-block;
-	font: 0.6em;
+	font: 0.6em verdana;
     color: #ffffff;
-    margin: 2.5% 1% 0%;
+    margin: 1.5% 1% 0%;
     float: right;
 }
