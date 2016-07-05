@@ -21,13 +21,15 @@ a:link, a:visited {
 h2 {
 	text-align: center;
     font: 3em 'Oleo Script';
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    color: #ffffff;
 }
 
 h3 {
     font: 2em 'Oleo Script';
-    margin: 0 15px 35px;
+    margin: 0 15px;
     text-align: right;
+    color: #ffffff;
 }
 
 img {
@@ -58,7 +60,7 @@ img {
 }
 
 .menu-item:hover {
-	background: #ff8800;
+	background: #ca3535;
 }
 
 .intro {
@@ -85,9 +87,9 @@ img {
 }
 
 .mypicture {
-    margin: 0 0 0 8%;
-	width: 16%;
-	display: inline-block;
+    margin: 5% 0 0 8%;
+    width: 17%;
+    display: inline-block;
 }
 .mypicture img {
     height: 100%;
@@ -105,11 +107,12 @@ img {
 .myprofile p {
         font: 1em 'Cinzel';
         color: rgba(255, 255, 255, 0.7);
+        margin: 30px 0 0;
 }
 
 .skills {
 	padding: 50px 0 0;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(22, 59, 93, 0.7);
 }
 
 .languages {
@@ -128,7 +131,7 @@ img {
 }
 .skillcontainer {
     margin: auto;
-    padding: 15px 0 0 20%;
+    padding: 0 0 0 20%;
 }
 .myskills {
     margin: 0 auto 40px;
@@ -136,38 +139,31 @@ img {
 }
 
 .skilllanguage,.skillprogram {
-    position: relative;
 	display: block;
     vertical-align: top;
 	width: 100%;
-	margin: 20px 5% 0 0;
+	margin: 10px 5% 0 0;
 }
 
 .skilllanguage p {
-    position: relative;
     font: bold 0.8em verdana;
-    color: #c0c0c0;
-    z-index: 3;
+    color: #ffffff;
 }
 .skillprogram p {
-    position: relative;
     font: bold 0.8em verdana;
-    color: #c0c0c0;
-    z-index: 3;
+    color: #ffffff;
 }
 
 .bar {
-    position: absolute;
-    top: 15%;
     display: inline-block;
-    height: 15px;
+    height: 25px;
     width: 100%;
     background: #446D79;
-    z-index: 0;
 }
 .percent {
-    background: #0105F0;
+    background: #ca3535;
     height: 100%;
+    padding: 4px 10px;
 }
 
 .skilllanguage:nth-child(1) .percent {
