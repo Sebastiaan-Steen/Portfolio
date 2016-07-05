@@ -146,14 +146,14 @@ img {
 .skilllanguage p {
     position: relative;
     font: bold 0.8em verdana;
-    color: #ff8800;
+    color: #c0c0c0;
     z-index: 3;
 }
 .skillprogram p {
-    position: absolute;
-    display: inline-block;
+    position: relative;
     font: bold 0.8em verdana;
-    top: 53%;
+    color: #c0c0c0;
+    z-index: 3;
 }
 
 .bar {
@@ -161,8 +161,8 @@ img {
     top: 15%;
     display: inline-block;
     height: 15px;
-    width: 75%;
-    background: #ffffff;
+    width: 100%;
+    background: #446D79;
     z-index: 0;
 }
 .percent {
@@ -197,7 +197,7 @@ img {
 }
 
 .projects {
-    padding: 75px 0 100px 0;
+    padding: 50px 0;
     background: rgba(120, 255, 255, 0.3);
     color: #ffffff;
 }
@@ -214,7 +214,7 @@ img {
 
 .project {
 	display: inline-block;
-	margin: 10px 10px;
+	margin: 10px 30px;
 }
 
 .project a {
@@ -238,12 +238,12 @@ img {
 }
 
 .contactinfo {
-	margin: 80px 30px;
+    margin: 50px 30px;
     padding: 20px 35px;
-	width: 35%;
-	height: 285px;
-	display: inline-block;
-	vertical-align: top;
+    width: 35%;
+    height: 340px;
+    display: inline-block;
+    vertical-align: top;
 }
 .contactinfo p {
     color: rgba(255, 255, 255, 0.7);
@@ -253,7 +253,7 @@ img {
 }
 
 .contactform {
-	margin: 100px auto 0;
+	margin: 80px auto 0;
     height: 320px;
     display: inline-block;
     width: 55%;
@@ -275,6 +275,9 @@ img {
     color: #C0C0C0;
     border: #000000 solid 1px;
 	resize: none;
+}
+.contactform button {
+        margin: 0 89%;
 }
 
 .footnote {
