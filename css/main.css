@@ -211,6 +211,7 @@ img {
 .project {
 	display: inline-block;
 	margin: 10px 30px;
+    background: #ffffff;
 }
 
 .project a {
@@ -302,7 +303,6 @@ img {
 .mysocialmedia img {
     height: 100%;
     width:  100%;
-    background: #ffffff;
 }
 
 .copyright {
