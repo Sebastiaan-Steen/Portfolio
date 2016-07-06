@@ -118,7 +118,7 @@ img {
 .languages {
     vertical-align: top;
     display: inline-block;
-    padding: 20px 0 0;
+    padding: 20px 0 50px;
     margin: 0 12.5% 0 2%;
     width: 22%;
 }
@@ -134,7 +134,7 @@ img {
     padding: 0 0 0 20%;
 }
 .myskills {
-    margin: 0 auto 40px;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -229,13 +229,12 @@ img {
 }
 
 .contactcontainer {
-    margin: auto;
+    margin: 0 auto;
     width: 85%;
+    padding: 50px 0;
 }
 
 .contactinfo {
-    margin: 50px 30px;
-    padding: 20px 35px;
     width: 35%;
     height: 340px;
     display: inline-block;
@@ -249,14 +248,19 @@ img {
 }
 
 .contactform {
-	margin: 80px auto 0;
     height: 320px;
     display: inline-block;
     width: 55%;
 }
 
+.contactform label{
+    margin: 0 0 0 8px;
+}
+
 .contactform input[type=text] {
 	width: 100%;
+    height: 30px;
+    padding: 0 7px;
 	margin: 5px auto 10px;
 	background: rgba(100,100,100,0.2);
     color: #C0C0C0;
@@ -266,6 +270,7 @@ img {
 .contactform textarea {
 	width: 100%;
 	height: 150px;
+    padding: 7px 7px;
 	margin: 5px auto 10px;
 	background: rgba(100,100,100,0.2);
     color: #C0C0C0;
