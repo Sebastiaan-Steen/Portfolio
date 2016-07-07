@@ -58,6 +58,15 @@ img {
     line-height: 60px;
     padding: 20px 40px;
 }
+@media screen and (max-width: 741px) {
+    .menu-item a {
+        font: 1em 'Oleo Script';
+        text-decoration: none;
+        line-height: 60px;
+        padding: 20px 25px;
+    }
+}
+
 
 .menu-item:hover {
 	background: #ca3535;
@@ -87,8 +96,8 @@ img {
 }
 
 .mypicture {
-    margin: 5% 0 0 8%;
-    width: 17%;
+    margin: 103px 0 0 5%;
+    width: 250px;
     display: inline-block;
 }
 .mypicture img {
