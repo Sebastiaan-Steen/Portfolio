@@ -26,7 +26,6 @@ h2 {
 
 h3 {
     font: 2em 'Oleo Script';
-    margin: 0 15px;
     text-align: right;
     color: #ffffff;
 }
@@ -80,13 +79,18 @@ img {
 .intro p {
     color: #ffffff;
     font: 3em 'Oleo Script';
-    margin: 23% 60px 0;
+    margin: 350px 60px 0;
     float: right;
 }
 .intro span {
     display: block;
     margin: 0 0 0 90px;
     font: 0.5em 'Cinzel';
+}
+@media screen and (max-width: 499px) {
+    .intro span {
+        margin: 0;
+    }
 }
 
 .about {
@@ -95,10 +99,9 @@ img {
 }
 
 .mypicture {
-    margin: 65px 8% 0 0;
+    margin: 70px 0 0 6%;
     width: 250px;
     display: inline-block;
-    float: right;
 }
 @media screen and (max-width: 692px) {
     .mypicture {
