@@ -1,36 +1,18 @@
 var target = document.getElementsByClassName("scrollertarget")
-//var pageheight = document.documentElement.scrollHeight;
-//var previousposition = window || document.documentElement.scrollTop;
-var currentOffset = window.pageYOffset;
 var scrollcount = 0;
 
-
 window.onscroll = function () {
-    var newposition = window.scrollY;
-    scrollcount = scrollcount + 1;
+    var currentOffset = target[scrollcount].offsetTop;
+    var newposition = window.pageYOffset;
+
     console.log(scrollcount);
 
     if (newposition > currentOffset) {
-
+        scrollcount = scrollcount + 1;
+        window.scrollTo(0, target[scrollcount].offsetTop);
     }
-    else {
-
+    if (newposition < currentOffset) {
+        scrollcount = scrollcount - 1;
+        window.scrollTo(0, target[scrollcount].offsetTop);
     }
-    currentOffset = newposition;
-    // window.scrollTo(0, target[i]);
 }
-
-/*
-addEventListener("scroll", function () {
-
-    var screenposition = window.pageYOffset;
-    if (screenposition > previousposition) {
-        console.log(scrollcount);
-//      window.scrollTo(0, target[scrollcount].offsetTop);
-    }
-    else {
-
-    }
-    previousposition = screenposition;
-}, false);
-*/
