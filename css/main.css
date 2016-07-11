@@ -97,10 +97,14 @@ img {
 	padding: 50px 0;
     color: #ffffff;
 }
+.about h2 {
+    text-align: left;
+}
 
 .mypicture {
-    margin: 70px 0 0 6%;
+    margin: 70px 0 0 15%;
     width: 250px;
+    height: 300px;
     display: inline-block;
 }
 @media screen and (max-width: 692px) {
@@ -243,7 +247,6 @@ img {
 
 .contact h2 {
     text-align: left; 
-    margin: 0 0 0 11px;  
 }
 
 .contactcontainer {
@@ -254,7 +257,6 @@ img {
 
 .contactinfo {
     width: 35%;
-    height: 340px;
     display: inline-block;
     vertical-align: top;
 }
@@ -262,19 +264,18 @@ img {
     color: rgba(255, 255, 255, 0.7);
     display: block;
     font: 1em 'Cinzel';
-    margin: 0 0 0 6%;
 }
 
 .contactform {
     height: 350px;
     float: right;
-    margin: 0 0 0 20%;
+    margin: 70px 0 0;
     display: inline-block;
     width: 450px;
 }
 @media screen and (max-width: 1205px) {
     .contactform {
-        margin: 0;
+        margin: 70px 0 0;
     }
 }
 @media screen and (max-width: 859px) {
