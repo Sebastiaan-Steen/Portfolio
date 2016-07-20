@@ -18,11 +18,7 @@ a:link, a:visited {
 	color: #ffffff;
 }
 
-<<<<<<< HEAD
-h1 {
-=======
 h1{
->>>>>>> aa78843e8a7b075c3e21de3f8cf8d1fa718ef432
     color: #ffffff;
     font-size: 3em;
     margin: 350px 60px 0;
@@ -73,10 +69,7 @@ img {
 .intro {
 	height: 100vh;
     background: url("../images/bambooforrest.png") no-repeat center / cover;
-<<<<<<< HEAD
-=======
     transition: 1s;
->>>>>>> aa78843e8a7b075c3e21de3f8cf8d1fa718ef432
 }
 .intro span {
     display: block;
@@ -90,12 +83,6 @@ img {
     color: #ffffff;
     transition: 1s;
 }
-<<<<<<< HEAD
-.about h2 {
-    text-align: left;
-}
-=======
->>>>>>> aa78843e8a7b075c3e21de3f8cf8d1fa718ef432
 .mypicture {
     margin: 70px 0 0 6%;
     width: 250px;
@@ -250,11 +237,7 @@ img {
 .contactform {
     height: 350px;
     float: right;
-<<<<<<< HEAD
-    margin: 70px 0 50px;
-=======
     margin: 0 0 0 20%;
->>>>>>> aa78843e8a7b075c3e21de3f8cf8d1fa718ef432
     display: inline-block;
     width: 450px;
 }
@@ -280,10 +263,6 @@ img {
     border: #000000 solid 1px;
 	resize: none;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> aa78843e8a7b075c3e21de3f8cf8d1fa718ef432
 .contactbutton {
     margin: 0 0 0 70%;
     width: 135px;
@@ -303,12 +282,14 @@ img {
     top: 95.7vh;
     width: 100vw;
 }
+
 .socialmedia {
 	display: inline-block;
 	margin: 8px auto;
 	width: 35%;
 	height: 25px;
 }
+
 .mysocialmedia {
 	display: inline-block;
 	margin: 0 10px;
@@ -319,8 +300,8 @@ img {
     height: 100%;
     width:  100%;
 }
-.copyright
- {
+
+.copyright {
 	display: inline-block;
 	font: 0.6em verdana;
     color: #ffffff;
@@ -351,11 +332,7 @@ img {
 
 @media screen and (max-width: 1205px) {
     .contactform {
-<<<<<<< HEAD
-        margin: 70px 0 0;
-=======
         margin: 0;
->>>>>>> aa78843e8a7b075c3e21de3f8cf8d1fa718ef432
     }
 }
 
