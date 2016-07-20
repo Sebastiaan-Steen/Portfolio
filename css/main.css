@@ -7,10 +7,9 @@
 body {
 	background: #002D37;
     margin: 0;
-    font-family: 'Oleo Script';
 }
 
-ul, ol {
+ul {
 	list-style: none;
 }
 
@@ -27,13 +26,13 @@ h1{
 
 h2 {
 	text-align: center;
-    font-size: 3em;
+    font: 3em 'Oleo Script';
     padding-bottom: 10px;
     color: #ffffff;
 }
 
 h3 {
-    font-size: 2em;
+    font: 2em 'Oleo Script';
     text-align: right;
     color: #ffffff;
 }
@@ -52,24 +51,34 @@ img {
 	text-align: center;
     z-index: 10000;
 }
+
 .menu-item {
 	display: inline-block;
     margin: auto;
 }
+
 .menu-item a {
-    font-size: 1.5em;
+    font: 1.5em 'Oleo Script';
     text-decoration: none;
     line-height: 60px;
     padding: 20px 40px;
 }
+
 .menu-item:hover {
 	background: #ca3535;
 }
 
 .intro {
-	height: 100vh;
+	margin: 60px 0 0;
+	height: 460px;
     background: url("../images/bambooforrest.png") no-repeat center / cover;
-    transition: 1s;
+}
+
+.intro p {
+    color: #ffffff;
+    font: 3em 'Oleo Script';
+    margin: 350px 60px 0;
+    float: right;
 }
 .intro span {
     display: block;
@@ -79,13 +88,16 @@ img {
 
 .about {
 	padding: 50px 0;
-    height: 100vh;
     color: #ffffff;
-    transition: 1s;
 }
+.about h2 {
+    text-align: left;
+}
+
 .mypicture {
-    margin: 70px 0 0 6%;
+    margin: 70px 0 0 15%;
     width: 250px;
+    height: 300px;
     display: inline-block;
 }
 .mypicture img {
@@ -93,6 +105,7 @@ img {
     width: 100%;
     border-radius: 250px;
 }
+
 .myprofile {
     margin: 0 0 0 5%;
     padding: 10px 50px;
@@ -107,11 +120,10 @@ img {
 }
 
 .skills {
-    height: 100vh;
 	padding: 50px 0 0;
     background: rgba(22, 59, 93, 0.7);
-    transition: 1s;
 }
+
 .languages {
     vertical-align: top;
     display: inline-block;
@@ -134,12 +146,14 @@ img {
     margin: 0 auto;
     width: 100%;
 }
+
 .skilllanguage,.skillprogram {
 	display: block;
     vertical-align: top;
 	width: 100%;
 	margin: 10px 5% 0 0;
 }
+
 .skilllanguage p {
     font: bold 0.8em verdana;
     color: #ffffff;
@@ -148,6 +162,7 @@ img {
     font: bold 0.8em verdana;
     color: #ffffff;
 }
+
 .bar {
     display: inline-block;
     height: 25px;
@@ -188,44 +203,48 @@ img {
 
 .projects {
     padding: 50px 0;
-    height: 100vh;
     background: rgba(120, 255, 255, 0.3);
     color: #ffffff;
 }
+
 .projectcontainer {
     margin: 0 auto;
     width: 85%;
 }
+
 .myprojects {
 	width: 90%;
 	margin: auto;
 }
+
 .project {
 	display: inline-block;
 	margin: 10px 30px;
     background: #ffffff;
 }
+
 .project a {
     text-decoration: none;
     vertical-align: bottom;
 }
 
 .contact {
-    height: 100vh;
 	width: 100%;
 	color: #FFFFFF;
 }
+
 .contact h2 {
-    text-align: left;
+    text-align: left; 
 }
+
 .contactcontainer {
     margin: 0 auto;
     width: 85%;
     padding: 50px 0;
 }
+
 .contactinfo {
     width: 35%;
-    height: 340px;
     display: inline-block;
     vertical-align: top;
 }
@@ -234,16 +253,19 @@ img {
     display: block;
     font: 1em 'Cinzel';
 }
+
 .contactform {
     height: 350px;
     float: right;
-    margin: 0 0 0 20%;
+    margin: 70px 0 0;
     display: inline-block;
     width: 450px;
 }
+
 .contactform label{
     margin: 0 0 0 8px;
 }
+
 .contactform input[type=text] {
 	width: 100%;
     height: 30px;
@@ -253,6 +275,7 @@ img {
     color: #C0C0C0;
     border: #000000 solid 1px;
 }
+
 .contactform textarea {
 	width: 100%;
 	height: 150px;
@@ -263,7 +286,7 @@ img {
     border: #000000 solid 1px;
 	resize: none;
 }
-.contactbutton {
+.button {
     margin: 0 0 0 70%;
     width: 135px;
     color: #ffffff;
@@ -271,16 +294,14 @@ img {
     background: rgba(100,100,100,0.6);
     border: none;
 }
-.contactbutton:hover {
+.button:hover {
     background: #ca3535
 }
 
 .footnote {
-    position: fixed;
-    z-index: 12;
-    background: #00263D;
-    top: 95.7vh;
-    width: 100vw;
+    clear: right;
+	height: 45px;
+	background: #00263D;
 }
 
 .socialmedia {
@@ -305,7 +326,7 @@ img {
 	display: inline-block;
 	font: 0.6em verdana;
     color: #ffffff;
-    margin: 1.5% 2% 0%;
+    margin: 1.5% 1% 0%;
     float: right;
 }
 
