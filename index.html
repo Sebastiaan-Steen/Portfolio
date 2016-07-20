@@ -6,9 +6,10 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
         <link href='https://fonts.googleapis.com/css?family=Cinzel|Oleo+Script:400,700' rel='stylesheet' type='text/css'>
-<!--    <script src="js/pagescroller.js"></script> -->
+        <script type="text/javascript" src="js/pagescroller.js"></script>
 	</head>
-	<body id="bodyid">
+	<body>
+
 		<nav class="menu">
 			<ul>
 				<li class="menu-item"><a href="">Home</a></li>
@@ -19,54 +20,95 @@
 			</ul>
 		</nav>
 
-		<section class="intro">
-			<p> Sebastiaan Steen 
-			<span>Front-end developer</span></p>
+		<section class="intro scrollertarget">
+			<h1> Sebastiaan Steen 
+			<span>Front-end developer</span></h1>
 		</section>
 
-		<section class="about">
-           
+		<section class="about scrollertarget">          
 			<article class="myprofile">
 				<h2>About</h2>
-				<p>This is a text all about who I am, what I do, what I like and dislike, and perhaps future aspirations.<br/>
-				Enjoy!</p>
+				<p>
+                    Game Design/Developer & Front-end Developer with 3 years experiënce in the game industry.<br>
+                    I enjoy working together with designers to come up with playfull UI designs to enhance the users overal experiënces
+                    be it in a game, website, application, etc.<br>
+                    <br>
+                    I'm a person that just loves technology and enjoys the programming that comes with it. Broadminded and willing to learn
+                    more about different languages and technologies.
+                </p>
 			</article>
             <div class="mypicture">
-				<img src="images/random-owl.png" alt="Just owling around someplace on the interwebs">
+				<img src="images/myimage.jpg" alt="Just owling around someplace on the interwebs">
 			</div>
 		</section>
 
-	<section class="skills">
-            <div class="skillscontainer">
-			    <h2>Skills</h2> 
-                <h3>Language</h3>
-			    <ul class="myskills">
-				    <li class="skill"><img src="images/csharp.png" alt="C#"></li>
-				    <li class="skill"><img src="images/html5.png" alt="Html 5"></li>
-				    <li class="skill"><img src="images/jscript.png" alt="Javascript"></li>
-				    <li class="skill"><img src="images/css.png" alt="Css 3"></li>
-				    <li class="skill"><img src="images/sql.png" alt="SQL"></li>
-			    </ul>
+	<section class="skills scrollertarget">
+        <h2>Skills</h2>
+        <div class="skillcontainer"> 
+            <div class="languages">
+                <h3>Languages</h3>
+                <ul class="myskills">
+                    <li class="skilllanguage">
+                        <div class="bar">
+                            <div class="percent"><p>C-Sharp.</p></div>
+                        </div>
+                    </li>
+                    <li class="skilllanguage">
+                        <div class="bar">
+                            <div class="percent"><p>Html5.</p></div>
+                        </div>
+                    </li>
+                    <li class="skilllanguage">
+                        <div class="bar">
+                            <div class="percent"><p>Javascript.</p></div>
+                        </div>
+                    </li>
+                    <li class="skilllanguage">
+                        <div class="bar">
+                            <div class="percent"><p>CSS.</p></div>
+                        </div>
+                    </li>
+                    <li class="skilllanguage">
+                        <div class="bar">
+                            <div class="percent"><p>SQL.</p></div>
+                        </div>
+                    </li> 
+                </ul>
+            </div>
+            <div class="programs">
                 <h3>Programs</h3>
                 <ul class="myskills">
-				    <li class="skill"><img src="images/photoshop.png" alt="Photoshop"></li>
-				    <li class="skill"><img src="images/unity3d.png" alt="Unity3d"></li>
-                    <li class="skill"><img src="images/maya.png" alt="Maya"></li>
+				    <li class="skillprogram">
+                        <div class="bar">
+                            <div class="percent"><p>Photoshop.</p></div>
+                        </div>
+                    </li>
+				    <li class="skillprogram">
+                        <div class="bar">
+                            <div class="percent"><p>Unity3d.</p></div>
+                        </div>
+                    </li>
+                    <li class="skillprogram">
+                        <div class="bar">
+                            <div class="percent"><p>Maya.</p></div>
+                        </div>
+                    </li>
 			    </ul>
-            </div>		
-		</section>
+             </div>
+        </div>		
+	</section>
 
-		<section class="projects">
-            <div class="projectcontainer">
-			    <h2>Portfolio</h2>
-			    <ul class="myprojects">
-				    <li class="project"><a href="http://codepamoja.org/"><img src="images/codepamojalogo.png" alt="codepamoja image"></a></li>
-                    <li class="project"><a href="http://www.stadsarchief.rotterdam.nl/rotterdam3d"><img src="images/rotterdam.png" alt="codepamoja image"></a></li>
-			    </ul>
-            </div>
-		</section>
+    <section class="projects scrollertarget">
+        <div class="projectcontainer">
+            <h2>Portfolio</h2>
+            <ul class="myprojects">
+                <li class="project"><a href="http://codepamoja.org/"><img src="images/codepamojalogo.png" alt="codepamoja image"></a></li>
+                <li class="project"><a href="http://www.stadsarchief.rotterdam.nl/rotterdam3d"><img src="images/rotterdam.png" alt="codepamoja image"></a></li>
+            </ul>
+        </div>
+    </section>
 
-		<section class="contact">
+		<section class="contact scrollertarget">
             <div class="contactcontainer">
 			    <article class="contactinfo">
 				    <h2>Contact</h2>
@@ -83,27 +125,27 @@
 				    <input type="text">
 				    <label>Message:</label>	
 				    <textarea>Type your message here.</textarea>
-				    <input type="submit">
+				    <input class="contactbutton" value="Send message" type="submit">
 			    </form>
             </div>
 		</section>
 		
-		<footer class="footnote">
+        <footer class="footnote">
 			<ul class="socialmedia">
 				<li class="mysocialmedia">
-					<a href="www.facebook.com"><img src="images/facebook-tn.png" alt="Facebook link" /></a>
+					<a href="https://www.facebook.com"><img src="images/facebook-tn.png" alt="Facebook link" /></a>
 				</li>
 				<li class="mysocialmedia">
-					<a href="www.twitter.com"><img src="images/twitter-tn.png" alt="Twitter link" /></a>
+					<a href="https://www.twitter.com"><img src="images/twitter-tn.png" alt="Twitter link" /></a>
 				</li>
 				<li class="mysocialmedia">
-					<a href="www.linkedin.com"><img src="images/linkedin-tn.png" alt="Linkedin link" /></a>
+					<a href="https://www.linkedin.com"><img src="images/linkedin-tn.png" alt="Linkedin link" /></a>
 				</li>
 			</ul>
 			<p class="copyright">
-				some copyright© tekst is added here.
+				some copyright© tekst may be added here.
 			</p>
-		</footer>
+		</footer>		
 
 	</body>
 </html>

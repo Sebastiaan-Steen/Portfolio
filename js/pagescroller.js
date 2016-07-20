@@ -1,22 +1,33 @@
+var target = document.getElementsByClassName("scrollertarget");
+console.log(target);
+var scrollcount = 0;
 
+window.onscroll = function () {
+    var targetElementOffset = target[scrollcount].offsetTop;
+    var windowOffset = window.pageYOffset;
 
-var sections = document.getElementsByTagName("section");
-//var runAnimation = setTimeout('scroll', 24);
+    console.log(scrollcount);
 
-window.addEventListener("scroll", function() {
-    var previousTop = window.pageYOffset;
-    for (var i = 0; i < sections.length; i++) {
-        if (st > previousTop) {
-            console.log("scrolls down");
-            var st = window || document.documentElement.scrollTop;
-          //  window.scrollTo(0, sections[i].pageYoffset);
-        }
- 
-        else {
-            console.log("scrolls up");
-        //    window.scrollTo(0, getSections[i].pageYoffset);
-        }
+    if (windowOffset > targetElementOffset) {
+        console.log('is scrolling down ', targetElementOffset + ' new position: ' + windowOffset);
+        scrollToSection(target[scrollcount]);
+    } else {
+        console.log('is scrolling up', targetElementOffset + ' new position: ' + windowOffset);
+        //scrollcount = scrollcount - 1;
+        scrollToSection(target[scrollcount]);
     }
-    previousTop = st;
-}, false);
+}
 
+function scrollToSection(gotoSection) {
+    console.log('gotoSection: ', gotoSection);
+    var diff = (gotoSection.offsetTop - window.scrollY) / 8;
+    if (Math.abs(diff)>1) {
+        window.scrollTo(0, (window.scrollY + diff));
+        clearTimeout(window._TO);
+        window._TO = setTimeout(scrollToSection, 30, gotoSection);
+    } else {
+        window.scrollTo(0, gotoSection.offsetTop);
+    }
+
+    scrollcount = scrollcount + 1;
+}
